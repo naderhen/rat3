@@ -7,6 +7,10 @@ function bootstrapObject($scope) {
   }
 }
 
+function newSale($rootScope, sale) {
+  $rootScope.$broadcast('new_sale', {sale: sale});
+}
+
 app.config(function($routeProvider, $locationProvider) {
   $routeProvider
       .when('/organizations/:org_id/boards/new', {
@@ -39,6 +43,16 @@ app.controller("BoardViewCtrl", function($scope, $routeParams, Restangular) {
 
     return _.reduce(sales, function(count, sale) { return count + sale.price; }, 0) / sales.length;
   }
+
+  $scope.$on('new_sale', function(scope, data) {
+    var sale = data.sale,
+        grades = _.flatten(_.pluck($scope.board.warehouses, 'grades')),
+        grade = _.where(grades, {id: sale.grade_id});
+
+    if (grade.length) {
+      grade[0].sales.push(sale);
+    }
+  })
 })
 
 app.controller("BoardBuilderCtrl", function($scope, $routeParams, Restangular) {
@@ -64,7 +78,7 @@ app.controller("BoardBuilderCtrl", function($scope, $routeParams, Restangular) {
   }
 });
 
-app.controller("SaleCtrl", function($scope, $http) {
+app.controller("SaleCtrl", function($scope, $rootScope) {
   $scope.select2options = {
     minimumInputLength: 2,
     ajax: {
@@ -86,6 +100,6 @@ app.controller("SaleCtrl", function($scope, $http) {
     sale.amount = parseInt(sale.amount);
     sale.price = parseFloat(sale.price);
 
-    $scope.grade.sales.push(sale);
+    newSale($rootScope, sale);
   }
 })

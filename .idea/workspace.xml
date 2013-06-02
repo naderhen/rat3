@@ -21,7 +21,7 @@
     <file path="/index.json.jbuilder" changelist="08fb35c8-0ec4-42dd-aa6d-14461d710771" time="1370136644313" ignored="false" />
     <file path="/edit.html.erb" changelist="08fb35c8-0ec4-42dd-aa6d-14461d710771" time="1370136977053" ignored="false" />
     <file path="/bootstrap.css" changelist="08fb35c8-0ec4-42dd-aa6d-14461d710771" time="1370137129147" ignored="false" />
-    <file path="/controllers.js" changelist="08fb35c8-0ec4-42dd-aa6d-14461d710771" time="1370206835613" ignored="false" />
+    <file path="/controllers.js" changelist="08fb35c8-0ec4-42dd-aa6d-14461d710771" time="1370208832700" ignored="false" />
     <file path="/development.rb" changelist="08fb35c8-0ec4-42dd-aa6d-14461d710771" time="1370141286274" ignored="false" />
     <file path="/builder.html" changelist="08fb35c8-0ec4-42dd-aa6d-14461d710771" time="1370181680789" ignored="false" />
     <file path="/app.js" changelist="08fb35c8-0ec4-42dd-aa6d-14461d710771" time="1370204921912" ignored="false" />
@@ -42,7 +42,7 @@
     <file path="/customer.rb" changelist="08fb35c8-0ec4-42dd-aa6d-14461d710771" time="1370204244468" ignored="false" />
     <file path="/grade_serializer.rb" changelist="08fb35c8-0ec4-42dd-aa6d-14461d710771" time="1370201348480" ignored="false" />
     <file path="/*.regexp" changelist="08fb35c8-0ec4-42dd-aa6d-14461d710771" time="1370201764232" ignored="false" />
-    <file path="/sale.html" changelist="08fb35c8-0ec4-42dd-aa6d-14461d710771" time="1370206382088" ignored="false" />
+    <file path="/sale.html" changelist="08fb35c8-0ec4-42dd-aa6d-14461d710771" time="1370207131304" ignored="false" />
     <file path="/customers_controller.rb" changelist="08fb35c8-0ec4-42dd-aa6d-14461d710771" time="1370204315343" ignored="false" />
     <file path="/customer_serializer.rb" changelist="08fb35c8-0ec4-42dd-aa6d-14461d710771" time="1370204222893" ignored="false" />
     <file path="/select2.css" changelist="08fb35c8-0ec4-42dd-aa6d-14461d710771" time="1370204842728" ignored="false" />
@@ -87,7 +87,7 @@
       <file leaf-file-name="sale.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/javascripts/templates/boards/sale.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="64" selection-start="191" selection-end="191" vertical-scroll-proportion="-1.5416666">
+            <state line="27" column="0" selection-start="892" selection-end="892" vertical-scroll-proportion="-16.541666">
               <folding>
                 <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#form#0;n#!!top" expanded="true" />
               </folding>
@@ -95,19 +95,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="view.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="view.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/assets/javascripts/templates/boards/view.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="260" selection-start="1023" selection-end="1023" vertical-scroll-proportion="-13.75">
+            <state line="22" column="207" selection-start="966" selection-end="970" vertical-scroll-proportion="0.6547619">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="controllers.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="controllers.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/javascripts/angular/controllers.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="86" column="40" selection-start="2536" selection-end="2536" vertical-scroll-proportion="0.6875">
+            <state line="102" column="30" selection-start="2935" selection-end="2935" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -178,12 +178,12 @@
         <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/select2.css" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/angular/app.js" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/templates/boards/sale.html" />
         <option value="$PROJECT_DIR$/app/serializers/user_serializer.rb" />
         <option value="$PROJECT_DIR$/app/models/user.rb" />
         <option value="$PROJECT_DIR$/app/views/boards/show.html.erb" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/templates/boards/view.html" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/templates/boards/sale.html" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/angular/controllers.js" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/templates/boards/view.html" />
       </list>
     </option>
   </component>
@@ -1124,23 +1124,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/templates/boards/sale.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="64" selection-start="191" selection-end="191" vertical-scroll-proportion="-1.5416666">
+        <state line="27" column="0" selection-start="892" selection-end="892" vertical-scroll-proportion="-16.541666">
           <folding>
             <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#form#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/templates/boards/view.html">
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/angular/controllers.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="260" selection-start="1023" selection-end="1023" vertical-scroll-proportion="-13.75">
+        <state line="102" column="30" selection-start="2935" selection-end="2935" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/angular/controllers.js">
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/templates/boards/view.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="86" column="40" selection-start="2536" selection-end="2536" vertical-scroll-proportion="0.6875">
+        <state line="22" column="207" selection-start="966" selection-end="970" vertical-scroll-proportion="0.6547619">
           <folding />
         </state>
       </provider>
