@@ -1,9 +1,9 @@
 function bootstrapObject($scope) {
   var el = $("#initial_object");
 
-  if (el && el.data('board')) {
+  if (el && el.data('board') && el.data('current_user')) {
     $scope.board = el.data('board');
-    console.log($scope);
+    $scope.current_user = el.data('current_user');
   }
 }
 

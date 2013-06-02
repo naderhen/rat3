@@ -17,11 +17,11 @@
     <file path="/boards_controller.rb" changelist="08fb35c8-0ec4-42dd-aa6d-14461d710771" time="1370185957635" ignored="false" />
     <file path="/_form.html.erb" changelist="08fb35c8-0ec4-42dd-aa6d-14461d710771" time="1370136117268" ignored="false" />
     <file path="/new.html.erb" changelist="08fb35c8-0ec4-42dd-aa6d-14461d710771" time="1370140978195" ignored="false" />
-    <file path="/show.html.erb" changelist="08fb35c8-0ec4-42dd-aa6d-14461d710771" time="1370195584880" ignored="false" />
+    <file path="/show.html.erb" changelist="08fb35c8-0ec4-42dd-aa6d-14461d710771" time="1370206588078" ignored="false" />
     <file path="/index.json.jbuilder" changelist="08fb35c8-0ec4-42dd-aa6d-14461d710771" time="1370136644313" ignored="false" />
     <file path="/edit.html.erb" changelist="08fb35c8-0ec4-42dd-aa6d-14461d710771" time="1370136977053" ignored="false" />
     <file path="/bootstrap.css" changelist="08fb35c8-0ec4-42dd-aa6d-14461d710771" time="1370137129147" ignored="false" />
-    <file path="/controllers.js" changelist="08fb35c8-0ec4-42dd-aa6d-14461d710771" time="1370206442214" ignored="false" />
+    <file path="/controllers.js" changelist="08fb35c8-0ec4-42dd-aa6d-14461d710771" time="1370206835613" ignored="false" />
     <file path="/development.rb" changelist="08fb35c8-0ec4-42dd-aa6d-14461d710771" time="1370141286274" ignored="false" />
     <file path="/builder.html" changelist="08fb35c8-0ec4-42dd-aa6d-14461d710771" time="1370181680789" ignored="false" />
     <file path="/app.js" changelist="08fb35c8-0ec4-42dd-aa6d-14461d710771" time="1370204921912" ignored="false" />
@@ -31,10 +31,10 @@
     <file path="/warehouse.rb" changelist="08fb35c8-0ec4-42dd-aa6d-14461d710771" time="1370199496218" ignored="false" />
     <file path="/grade.rb" changelist="08fb35c8-0ec4-42dd-aa6d-14461d710771" time="1370200121911" ignored="false" />
     <file path="/resources.js" changelist="08fb35c8-0ec4-42dd-aa6d-14461d710771" time="1370180164532" ignored="false" />
-    <file path="/view.html" changelist="08fb35c8-0ec4-42dd-aa6d-14461d710771" time="1370203239317" ignored="false" />
+    <file path="/view.html" changelist="08fb35c8-0ec4-42dd-aa6d-14461d710771" time="1370206858426" ignored="false" />
     <file path="/board_serializer.rb" changelist="08fb35c8-0ec4-42dd-aa6d-14461d710771" time="1370198911041" ignored="false" />
     <file path="/warehouse_serializer.rb" changelist="08fb35c8-0ec4-42dd-aa6d-14461d710771" time="1370197097617" ignored="false" />
-    <file path="/user.rb" changelist="08fb35c8-0ec4-42dd-aa6d-14461d710771" time="1370199318725" ignored="false" />
+    <file path="/user.rb" changelist="08fb35c8-0ec4-42dd-aa6d-14461d710771" time="1370206675281" ignored="false" />
     <file path="/assignment.rb" changelist="08fb35c8-0ec4-42dd-aa6d-14461d710771" time="1370198006173" ignored="false" />
     <file path="/role.rb" changelist="08fb35c8-0ec4-42dd-aa6d-14461d710771" time="1370198021056" ignored="false" />
     <file path="/ability.rb" changelist="08fb35c8-0ec4-42dd-aa6d-14461d710771" time="1370198103470" ignored="false" />
@@ -46,6 +46,7 @@
     <file path="/customers_controller.rb" changelist="08fb35c8-0ec4-42dd-aa6d-14461d710771" time="1370204315343" ignored="false" />
     <file path="/customer_serializer.rb" changelist="08fb35c8-0ec4-42dd-aa6d-14461d710771" time="1370204222893" ignored="false" />
     <file path="/select2.css" changelist="08fb35c8-0ec4-42dd-aa6d-14461d710771" time="1370204842728" ignored="false" />
+    <file path="/user_serializer.rb" changelist="08fb35c8-0ec4-42dd-aa6d-14461d710771" time="1370206639339" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,33 +66,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="customers_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/customers_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="30" selection-start="153" selection-end="153" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="angular-strap.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/lib/angular-strap.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="788" column="58" selection-start="29183" selection-end="29192" vertical-scroll-proportion="3.52">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="directives.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/angular/directives.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="166" column="4" selection-start="5862" selection-end="5862" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="select2.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/select2.css">
           <provider selected="true" editor-type-id="text-editor">
@@ -113,7 +87,7 @@
       <file leaf-file-name="sale.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/javascripts/templates/boards/sale.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="64" selection-start="191" selection-end="191" vertical-scroll-proportion="-2.5">
+            <state line="4" column="64" selection-start="191" selection-end="191" vertical-scroll-proportion="-1.5416666">
               <folding>
                 <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#form#0;n#!!top" expanded="true" />
               </folding>
@@ -124,7 +98,7 @@
       <file leaf-file-name="view.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/javascripts/templates/boards/view.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="1064" vertical-scroll-proportion="-0.0">
+            <state line="22" column="260" selection-start="1023" selection-end="1023" vertical-scroll-proportion="-13.75">
               <folding />
             </state>
           </provider>
@@ -133,27 +107,52 @@
       <file leaf-file-name="controllers.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/assets/javascripts/angular/controllers.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="86" column="40" selection-start="2483" selection-end="2483" vertical-scroll-proportion="0.8863636">
+            <state line="86" column="40" selection-start="2536" selection-end="2536" vertical-scroll-proportion="0.6875">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="select2.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/lib/select2.js">
+      <file leaf-file-name="show.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/boards/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3053" column="11" selection-start="100147" selection-end="100147" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
+            <state line="0" column="83" selection-start="83" selection-end="83" vertical-scroll-proportion="-0.0">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
+      <file leaf-file-name="user_serializer.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/serializers/user_serializer.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="23" selection-start="685" selection-end="685" vertical-scroll-proportion="0.0">
+            <state line="1" column="31" selection-start="78" selection-end="78" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="user.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/user.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="18" selection-start="521" selection-end="521" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="organization_serializer.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/serializers/organization_serializer.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="83" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="warehouse_serializer.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/serializers/warehouse_serializer.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -169,9 +168,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/models/sale.rb" />
-        <option value="$PROJECT_DIR$/app/models/warehouse.rb" />
-        <option value="$PROJECT_DIR$/app/models/grade.rb" />
         <option value="$PROJECT_DIR$/app/serializers/grade_serializer.rb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/serializers/customer_serializer.rb" />
@@ -182,8 +178,11 @@
         <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/select2.css" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/angular/app.js" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/templates/boards/view.html" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/templates/boards/sale.html" />
+        <option value="$PROJECT_DIR$/app/serializers/user_serializer.rb" />
+        <option value="$PROJECT_DIR$/app/models/user.rb" />
+        <option value="$PROJECT_DIR$/app/views/boards/show.html.erb" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/templates/boards/view.html" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/angular/controllers.js" />
       </list>
     </option>
@@ -717,6 +716,26 @@
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
       <method />
     </configuration>
+    <configuration default="true" type="RubyRunConfigurationType" factoryName="Ruby">
+      <module name="" />
+      <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="" />
+      <RUBY_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RUBY_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RUBY_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
+      <envs />
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="" />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="" />
+      <method />
+    </configuration>
     <configuration default="true" type="TestUnitRunConfigurationType" factoryName="Test::Unit/Shoulda/Minitest">
       <predefined_log_file id="RUBY_TESTUNIT" enabled="true" />
       <module name="" />
@@ -1010,50 +1029,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/serializers/grade_serializer.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="0" selection-start="0" selection-end="103" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/serializers/customer_serializer.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="23" selection-start="74" selection-end="74" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/grade.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="76" selection-end="131" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/customer.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="12" selection-start="97" selection-end="97" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/sass-3.2.9/lib/sass/scss/parser.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="906" column="10" selection-start="26149" selection-end="26149" vertical-scroll-proportion="0.33271718">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/lib/bootstrap.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1940" column="5" selection-start="53231" selection-end="53231" vertical-scroll-proportion="0.6302187">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/customers_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="30" selection-start="153" selection-end="153" vertical-scroll-proportion="0.0">
@@ -1098,6 +1073,48 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/serializers/organization_serializer.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="83" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/serializers/warehouse_serializer.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/warehouse.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="0" selection-start="141" selection-end="200" vertical-scroll-proportion="0.16635859">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/serializers/user_serializer.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="31" selection-start="78" selection-end="78" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="18" selection-start="521" selection-end="521" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/boards/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="83" selection-start="83" selection-end="83" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/angular/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="94" selection-start="94" selection-end="94" vertical-scroll-proportion="0.0">
@@ -1105,25 +1122,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/templates/boards/view.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="1064" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/templates/boards/sale.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="64" selection-start="191" selection-end="191" vertical-scroll-proportion="-2.5">
+        <state line="4" column="64" selection-start="191" selection-end="191" vertical-scroll-proportion="-1.5416666">
           <folding>
             <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#form#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/templates/boards/view.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="260" selection-start="1023" selection-end="1023" vertical-scroll-proportion="-13.75">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/angular/controllers.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="86" column="40" selection-start="2483" selection-end="2483" vertical-scroll-proportion="0.8863636">
+        <state line="86" column="40" selection-start="2536" selection-end="2536" vertical-scroll-proportion="0.6875">
           <folding />
         </state>
       </provider>

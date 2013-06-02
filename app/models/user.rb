@@ -13,4 +13,8 @@ class User < ActiveRecord::Base
     roles.any? { |r| r.name.underscore.to_sym == role_sym }
   end
 
+  def active_model_serializer
+    UserSerializer
+  end
+
 end
