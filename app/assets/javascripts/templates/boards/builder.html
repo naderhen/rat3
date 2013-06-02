@@ -1,0 +1,50 @@
+<div class="row">
+  <legend>New RATBoard</legend>
+  <form class="form-horizontal">
+    <a xeditable href="javascript:;" data-type="date" data-ng-model="board.date" data-viewformat="M dd, yyyy" data-placement="right" data-placeholder="Required" data-showbuttons="true" data-original-title="Select board date" class="editable editable-click">{{board.date | date}}</a>
+    <div ng-repeat="warehouse in board.warehouses">
+      <div class="bs-section">
+        <div class="title">Warehouse: <a xeditable href="javascript:void(0);" data-type="text" data-ng-model="warehouse.name" data-placement="right" data-placeholder="Required" data-showbuttons="true" data-original-title="Enter the warehouse name" class="editable editable-click">{{warehouse.name}}</a></div>
+
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Grade</th>
+              <th>Total</th>
+              <th>Available When?</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr ng-repeat="grade in warehouse.grades">
+              <td>
+                <a xeditable href="javascript:void(0);" data-type="text" data-ng-model="grade.name" data-placement="right" data-placeholder="Required" data-showbuttons="true" data-original-title="Enter the grade name" class="editable editable-click">{{grade.name}}</a>
+              </td>
+              <td>
+                <a xeditable href="javascript:void(0);" data-type="text" data-ng-model="grade.total" data-placement="right" data-placeholder="Required" data-showbuttons="true" data-original-title="Enter the grade amount" class="editable editable-click">{{grade.total}}</a>
+              </td>
+              <td>
+                <a xeditable href="javascript:;" data-type="date" data-ng-model="grade.available" data-viewformat="M dd, yyyy" data-placement="right" data-placeholder="Required" data-showbuttons="true" data-original-title="Select grade available date" class="editable editable-click">{{grade.available | date}}</a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a xeditable href="javascript:void(0);" data-type="text" data-ng-model="warehouse.new_grade.name" data-placement="right" data-placeholder="Required" data-showbuttons="true" data-original-title="Enter the new grade name" class="editable editable-click">{{warehouse.new_grade.name}}</a>
+              </td>
+              <td>
+                <a xeditable href="javascript:void(0);" data-type="text" data-ng-model="warehouse.new_grade.total" data-placement="right" data-placeholder="Required" data-showbuttons="true" data-original-title="Enter the new grade amount" class="editable editable-click">{{warehouse.new_grade.total}}</a>
+              </td>
+              <td>
+                <a xeditable href="javascript:;" data-type="date" data-ng-model="warehouse.new_grade.available" data-viewformat="M dd, yyyy" data-placement="right" data-placeholder="Required" data-showbuttons="true" data-original-title="Select new grade available date" class="editable editable-click">{{warehouse.new_grade.available | date}}</a>
+              </td>
+              <td><button ng-click="addItem(warehouse)" class="btn btn-primary">Add</button></td>
+            </tr>
+          </tbody>
+        </table>
+
+      </div>
+      <pre class="prettyprint">
+        
+      </pre>
+    </div>
+  </form>
+</div>

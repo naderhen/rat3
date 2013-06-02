@@ -1,0 +1,49 @@
+.form-horizontal .control-label {
+  min-width: 75px;
+  width: auto;
+  text-align: left;
+}
+
+.bs-section {
+  position: relative;
+  margin: 15px 0;
+  padding: 39px 19px 14px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+
+.bs-section .title {
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  padding: 3px 7px;
+  font-size: 12px;
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  color: #9da0a4;
+  -webkit-border-radius: 4px 0 4px 0;
+  -moz-border-radius: 4px 0 4px 0;
+  border-radius: 4px 0 4px 0;
+}
+
+.bs-section > p:last-child {
+  margin-bottom: 0;
+}
+
+.bs-section + .prettyprint {
+  margin-top: -20px;
+  padding-top: 15px;
+}
+
+pre.prettyprint {
+  margin-bottom: 20px;
+}
+
+.prettyprint {
+  padding: 8px;
+  background-color: #f7f7f9;
+  border: 1px solid #e1e1e8;
+}

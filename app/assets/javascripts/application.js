@@ -10,4 +10,13 @@
 // WARNING: THE FIRST BLANK LINE MARKS THE END OF WHAT'S TO BE PROCESSED, ANY BLANK LINE SHOULD
 // GO AFTER THE REQUIRES BELOW.
 //
-//= require_tree .
+//= require lib/jquery
+//= require lib/bootstrap
+//= require lib/bootstrap-datepicker
+//= require lib/angular
+//= require lib/angular-resource
+//= require lib/angular-strap
+//= require lib/bootstrap-editable
+//= require angular/app
+//= require angular/directives
+//= require angular/controllers
