@@ -1,4 +1,6 @@
 class BoardsController < ApplicationController
+  load_and_authorize_resource
+
   before_action :set_organization
   before_action :set_board, only: [:show, :edit, :update, :destroy]
 
@@ -74,6 +76,6 @@ class BoardsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def board_params
-      params.require(:board).permit(:date, :organization_id)
+      params.require(:board).permit(:date, :organization_id, :warehouses => [:name])
     end
 end

@@ -36,6 +36,7 @@ GEM
     binding_of_caller (0.7.1)
       debug_inspector (>= 0.0.1)
     builder (3.1.4)
+    cancan (1.6.7)
     coderay (1.0.9)
     coffee-rails (4.0.0)
       coffee-script (>= 2.2.0)
@@ -136,6 +137,7 @@ DEPENDENCIES
   active_model_serializers
   better_errors
   binding_of_caller
+  cancan
   coffee-rails (~> 4.0.0)
   devise (~> 3.0.0.rc)
   jbuilder (~> 1.0.1)

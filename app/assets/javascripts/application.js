@@ -14,9 +14,12 @@
 //= require lib/bootstrap
 //= require lib/bootstrap-datepicker
 //= require lib/angular
+//= require lib/underscore
 //= require lib/angular-resource
+//= require lib/restangular
 //= require lib/angular-strap
 //= require lib/bootstrap-editable
 //= require angular/app
+//= require angular/resources
 //= require angular/directives
 //= require angular/controllers
