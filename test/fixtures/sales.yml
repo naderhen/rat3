@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  amount: 1
+  grade_id: 1
+  user_id: 1
+  customer_id: 1
+  price: 1.5
+  invoice_date: 2013-06-02
+  receive_date: 2013-06-02
+
+two:
+  amount: 1
+  grade_id: 1
+  user_id: 1
+  customer_id: 1
+  price: 1.5
+  invoice_date: 2013-06-02
+  receive_date: 2013-06-02

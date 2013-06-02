@@ -23,6 +23,12 @@ app.config(function($routeProvider, $locationProvider) {
 
 app.controller("BoardViewCtrl", function($scope, $routeParams, Restangular) {
   bootstrapObject($scope);
+
+  $scope.salespersonSales = function(grade, salesperson) {
+    var total_amount = _.where(grade.sales, {user_id: salesperson.id}).reduce(function(count, sale) { return count + sale.amount }, 0);
+
+    return total_amount;
+  }
 })
 
 app.controller("BoardBuilderCtrl", function($scope, $routeParams, Restangular) {

@@ -17,7 +17,7 @@
         <td>{{grade.available_amount}}</td>
         <td>{{grade.sold_amount}}</td>
         <td>{{grade.total}}</td>
-        <td ng-repeat="salesperson in board.salespeople">{{salesperson.email}}'s Sales</td>
+        <td ng-repeat="salesperson in board.salespeople">{{salespersonSales(grade, salesperson)}} sales</td>
         <td>{{2+2}}</td>
       </tr>
     </tbody>
