@@ -1,2 +1,5 @@
+<% content_for :header_text do %>
+  <%= @organization.name %> for <%= @board.date %>
+<% end %>
 <div id="initial_object" data-board="<%= json_for @board %>" data-current_user="<%= json_for current_user %>"></div>
 <ng-view></ng-view>

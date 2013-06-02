@@ -78,7 +78,7 @@ app.controller("BoardBuilderCtrl", function($scope, $routeParams, Restangular) {
   }
 });
 
-app.controller("SaleCtrl", function($scope, $rootScope) {
+app.controller("SaleCtrl", function($scope, $rootScope, Restangular) {
   $scope.select2options = {
     minimumInputLength: 2,
     ajax: {
@@ -100,6 +100,10 @@ app.controller("SaleCtrl", function($scope, $rootScope) {
     sale.amount = parseInt(sale.amount);
     sale.price = parseFloat(sale.price);
 
-    newSale($rootScope, sale);
+    sales = Restangular.all('sales');
+    sales.post({sale: sale}).then(function(result) {
+      newSale($rootScope, result);
+      $scope.hide();
+    });
   }
 })

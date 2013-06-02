@@ -1,4 +1,11 @@
 <div class="row">
+  <h2 class="pull-left">
+    <% if content_for? :header_text %>
+      <%= yield :header_text %>
+    <% else %>
+      RATBoard
+    <% end %>
+  </h2>
   <ul class="nav nav-pills pull-right">
     <li class="active"><a href="#">Home</a></li>
     <li><a href="#">About</a></li>
