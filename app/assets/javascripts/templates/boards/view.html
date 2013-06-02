@@ -1,0 +1,25 @@
+<div ng-repeat="warehouse in board.warehouses">
+  <h3>{{warehouse.name}}</h3>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Grade</th>
+        <th>Available</th>
+        <th>Sold</th>
+        <th>Inventory</th>
+        <th ng-repeat="salesperson in board.salespeople">{{salesperson.email}}</th>
+        <th>Average Price</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="grade in warehouse.grades">
+        <td>{{grade.name}}</td>
+        <td>{{grade.available_amount}}</td>
+        <td>{{grade.sold_amount}}</td>
+        <td>{{grade.total}}</td>
+        <td ng-repeat="salesperson in board.salespeople">{{salesperson.email}}'s Sales</td>
+        <td>{{2+2}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

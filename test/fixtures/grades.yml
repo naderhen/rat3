@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  warehouse_id: 1
+  name: MyString
+  total: 1
+  available: 2013-06-02
+
+two:
+  warehouse_id: 1
+  name: MyString
+  total: 1
+  available: 2013-06-02
