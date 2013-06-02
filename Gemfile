@@ -7,6 +7,7 @@ gem 'rails', '4.0.0.rc1'
 gem 'pg'
 
 gem "devise", "~> 3.0.0.rc"
+gem "active_model_serializers"
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0.rc1'
