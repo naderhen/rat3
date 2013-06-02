@@ -1,4 +1,4 @@
-var app = angular.module('app', ['ngResource', 'restangular', '$strap.directives'])
+var app = angular.module('app', ['ngResource', 'restangular', '$strap.directives', 'ui.select2'])
     .config(function(RestangularProvider) {
       RestangularProvider.setBaseUrl("");
       RestangularProvider.setRequestSuffix('.json');

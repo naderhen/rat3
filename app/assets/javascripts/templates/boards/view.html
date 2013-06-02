@@ -7,7 +7,7 @@
         <th>Available</th>
         <th>Sold</th>
         <th>Inventory</th>
-        <th ng-repeat="salesperson in board.salespeople">{{salesperson.email}}</th>
+        <th ng-repeat="salesperson in board.salespeople">{{salesperson.name}}</th>
         <th>Average Price</th>
       </tr>
     </thead>
@@ -17,8 +17,11 @@
         <td>{{grade.total - totalSales(grade)}}</td>
         <td>{{totalSales(grade)}}</td>
         <td>{{grade.total}}</td>
-        <td ng-repeat="salesperson in board.salespeople">{{salespersonSales(grade, salesperson)}} sales</td>
-        <td>{{averagePrice(grade)}}</td>
+        <td ng-repeat="salesperson in board.salespeople">{{salespersonSales(grade, salesperson)}}</td>
+        <td>{{averagePrice(grade) | currency}}</td>
+        <td>
+          <button type="button" class="btn" data-unique="1" bs-popover="'/assets/templates/boards/sale.html'" data-title="Sale of {{grade.name}}" data-placement="right" ng-controller="SaleCtrl" ng-init="sale.grade_id = grade.id;">Sell!</button>
+        </td>
       </tr>
     </tbody>
   </table>

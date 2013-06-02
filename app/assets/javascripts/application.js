@@ -13,6 +13,7 @@
 //= require lib/jquery
 //= require lib/bootstrap
 //= require lib/bootstrap-datepicker
+//= require lib/select2
 //= require lib/angular
 //= require lib/underscore
 //= require lib/angular-resource

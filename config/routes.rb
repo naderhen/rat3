@@ -3,6 +3,10 @@ Rat3::Application.routes.draw do
     resources :boards
   end
 
+  resources :customers do
+    get 'search', on: :collection
+  end
+
   resources :boards
 
   devise_for :users

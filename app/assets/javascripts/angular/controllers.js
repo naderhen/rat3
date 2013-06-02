@@ -63,3 +63,29 @@ app.controller("BoardBuilderCtrl", function($scope, $routeParams, Restangular) {
     boards.post({board: $scope.board});
   }
 });
+
+app.controller("SaleCtrl", function($scope, $http) {
+  $scope.select2options = {
+    minimumInputLength: 2,
+    ajax: {
+      url: "/customers/search",
+      data: function (term, page) {
+        return {term: term, page: page};
+      },
+      results: function (data, page) {
+        _.map(data, function(item) { item.text = item.name; })
+        return {results: data};
+      }
+    }
+  }
+
+  $scope.submit = function() {
+    var sale = $scope.sale;
+
+    sale.customer_id = sale.customer.id;
+    sale.amount = parseInt(sale.amount);
+    sale.price = parseFloat(sale.price);
+
+    $scope.grade.sales.push(sale);
+  }
+})

@@ -1,0 +1,30 @@
+<form class="form">
+  <div class="control-group">
+    <label class="control-label">Customer</label>
+    <div class="controls">
+      <input ui-select2="select2options" ng-model="sale.customer" style="width:200px" />
+    </div>
+  </div>
+
+  <div class="control-group">
+    <label class="control-label">Amount</label>
+    <div class="controls">
+      <input type="text" ng-model="sale.amount"/>
+    </div>
+  </div>
+
+  <div class="control-group">
+    <label class="control-label">Price</label>
+    <div class="controls">
+      <input type="text" ng-model="sale.price"/>
+    </div>
+  </div>
+
+  <div class="control-group input-append">
+    <label class="control-label">Invoice Date</label>
+    <input type="text" ng-model="sale.invoice_date" data-date-format="mm/dd/yyyy" bs-datepicker>
+    <button type="button" class="btn" data-toggle="datepicker"><i class="icon-calendar"></i></button>
+  </div>
+
+  <button type="button" class="btn btn-primary" ng-click="submit()">Send</button>
+</form>
