@@ -24,10 +24,20 @@ app.config(function($routeProvider, $locationProvider) {
 app.controller("BoardViewCtrl", function($scope, $routeParams, Restangular) {
   bootstrapObject($scope);
 
+  $scope.totalSales = function(grade) {
+    return _.reduce(grade.sales, function(count, sale) { return count + sale.amount; }, 0);
+  }
+
   $scope.salespersonSales = function(grade, salesperson) {
     var total_amount = _.where(grade.sales, {user_id: salesperson.id}).reduce(function(count, sale) { return count + sale.amount }, 0);
 
     return total_amount;
+  }
+
+  $scope.averagePrice = function(grade) {
+    var sales = grade.sales;
+
+    return _.reduce(sales, function(count, sale) { return count + sale.price; }, 0) / sales.length;
   }
 })
 

@@ -21,7 +21,7 @@
     <file path="/index.json.jbuilder" changelist="08fb35c8-0ec4-42dd-aa6d-14461d710771" time="1370136644313" ignored="false" />
     <file path="/edit.html.erb" changelist="08fb35c8-0ec4-42dd-aa6d-14461d710771" time="1370136977053" ignored="false" />
     <file path="/bootstrap.css" changelist="08fb35c8-0ec4-42dd-aa6d-14461d710771" time="1370137129147" ignored="false" />
-    <file path="/controllers.js" changelist="08fb35c8-0ec4-42dd-aa6d-14461d710771" time="1370201108537" ignored="false" />
+    <file path="/controllers.js" changelist="08fb35c8-0ec4-42dd-aa6d-14461d710771" time="1370201435548" ignored="false" />
     <file path="/development.rb" changelist="08fb35c8-0ec4-42dd-aa6d-14461d710771" time="1370141286274" ignored="false" />
     <file path="/builder.html" changelist="08fb35c8-0ec4-42dd-aa6d-14461d710771" time="1370181680789" ignored="false" />
     <file path="/app.js" changelist="08fb35c8-0ec4-42dd-aa6d-14461d710771" time="1370180190303" ignored="false" />
@@ -31,7 +31,7 @@
     <file path="/warehouse.rb" changelist="08fb35c8-0ec4-42dd-aa6d-14461d710771" time="1370199496218" ignored="false" />
     <file path="/grade.rb" changelist="08fb35c8-0ec4-42dd-aa6d-14461d710771" time="1370200121911" ignored="false" />
     <file path="/resources.js" changelist="08fb35c8-0ec4-42dd-aa6d-14461d710771" time="1370180164532" ignored="false" />
-    <file path="/view.html" changelist="08fb35c8-0ec4-42dd-aa6d-14461d710771" time="1370200400814" ignored="false" />
+    <file path="/view.html" changelist="08fb35c8-0ec4-42dd-aa6d-14461d710771" time="1370201453560" ignored="false" />
     <file path="/board_serializer.rb" changelist="08fb35c8-0ec4-42dd-aa6d-14461d710771" time="1370198911041" ignored="false" />
     <file path="/warehouse_serializer.rb" changelist="08fb35c8-0ec4-42dd-aa6d-14461d710771" time="1370197097617" ignored="false" />
     <file path="/user.rb" changelist="08fb35c8-0ec4-42dd-aa6d-14461d710771" time="1370199318725" ignored="false" />
@@ -40,7 +40,7 @@
     <file path="/ability.rb" changelist="08fb35c8-0ec4-42dd-aa6d-14461d710771" time="1370198103470" ignored="false" />
     <file path="/sale.rb" changelist="08fb35c8-0ec4-42dd-aa6d-14461d710771" time="1370199337636" ignored="false" />
     <file path="/customer.rb" changelist="08fb35c8-0ec4-42dd-aa6d-14461d710771" time="1370199332419" ignored="false" />
-    <file path="/grade_serializer.rb" changelist="08fb35c8-0ec4-42dd-aa6d-14461d710771" time="1370200860876" ignored="false" />
+    <file path="/grade_serializer.rb" changelist="08fb35c8-0ec4-42dd-aa6d-14461d710771" time="1370201348480" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,19 +69,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="view.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="view.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/assets/javascripts/templates/boards/view.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="80" selection-start="667" selection-end="667" vertical-scroll-proportion="-8.75">
+            <state line="16" column="45" selection-start="516" selection-end="516" vertical-scroll-proportion="0.54151624">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="controllers.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="controllers.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/javascripts/angular/controllers.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="78" selection-start="846" selection-end="846" vertical-scroll-proportion="0.5729167">
+            <state line="27" column="83" selection-start="832" selection-end="832" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -144,7 +144,7 @@
       <file leaf-file-name="grade_serializer.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/serializers/grade_serializer.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="23" selection-start="71" selection-end="71" vertical-scroll-proportion="0.0">
+            <state line="1" column="31" selection-start="79" selection-end="79" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -173,14 +173,14 @@
         <option value="$PROJECT_DIR$/app/models/sale.rb" />
         <option value="$PROJECT_DIR$/app/models/warehouse.rb" />
         <option value="$PROJECT_DIR$/app/models/grade.rb" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/templates/boards/view.html" />
         <option value="$PROJECT_DIR$/app/serializers/grade_serializer.rb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/angular/controllers.js" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/templates/boards/view.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="3" />
+    <option name="x" value="1" />
     <option name="y" value="22" />
     <option name="width" value="1440" />
     <option name="height" value="449" />
@@ -918,7 +918,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="3" y="22" width="1440" height="449" extended-state="6" />
+    <frame x="1" y="22" width="1440" height="449" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1094,21 +1094,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/serializers/grade_serializer.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="23" selection-start="71" selection-end="71" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/templates/boards/view.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="80" selection-start="667" selection-end="667" vertical-scroll-proportion="-8.75">
+        <state line="1" column="31" selection-start="79" selection-end="79" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/angular/controllers.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="78" selection-start="846" selection-end="846" vertical-scroll-proportion="0.5729167">
+        <state line="27" column="83" selection-start="832" selection-end="832" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/templates/boards/view.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="45" selection-start="516" selection-end="516" vertical-scroll-proportion="0.54151624">
           <folding />
         </state>
       </provider>

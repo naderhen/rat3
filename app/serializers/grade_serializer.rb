@@ -1,5 +1,5 @@
 class GradeSerializer < ActiveModel::Serializer
-  attributes :id, :name
+  attributes :id, :name, :total
   has_many :sales
 
 end

@@ -14,11 +14,11 @@
     <tbody>
       <tr ng-repeat="grade in warehouse.grades">
         <td>{{grade.name}}</td>
-        <td>{{grade.available_amount}}</td>
-        <td>{{grade.sold_amount}}</td>
+        <td>{{grade.total - totalSales(grade)}}</td>
+        <td>{{totalSales(grade)}}</td>
         <td>{{grade.total}}</td>
         <td ng-repeat="salesperson in board.salespeople">{{salespersonSales(grade, salesperson)}} sales</td>
-        <td>{{2+2}}</td>
+        <td>{{averagePrice(grade)}}</td>
       </tr>
     </tbody>
   </table>
