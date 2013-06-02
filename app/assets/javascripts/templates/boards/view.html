@@ -12,9 +12,9 @@
       </tr>
     </thead>
     <tbody>
-      <tr ng-repeat="grade in warehouse.grades">
+      <tr ng-repeat="grade in warehouse.grades" ng-class="{error: availableCount(grade) < 0 }">
         <td>{{grade.name}}</td>
-        <td>{{grade.total - totalSales(grade)}}</td>
+        <td>{{availableCount(grade)}}</td>
         <td>{{totalSales(grade)}}</td>
         <td>{{grade.total}}</td>
         <td ng-repeat="salesperson in board.salespeople">{{salespersonSales(grade, salesperson)}}</td>
@@ -22,6 +22,15 @@
         <td>
           <button type="button" class="btn" data-unique="1" bs-popover="'/assets/templates/boards/sale.html'" data-title="Sale of {{grade.name}}" data-placement="right" ng-controller="SaleCtrl" ng-init="sale.grade_id = grade.id; sale.user_id = current_user.id;">Sell!</button>
         </td>
+      </tr>
+      <tr class="info">
+        <td>Totals:</td>
+        <td>{{available(warehouse)}}</td>
+        <td>{{sold(warehouse)}}</td>
+        <td>{{total(warehouse)}}</td>
+        <td ng-repeat="salesperson in board.salespeople">{{salespersonTotal(warehouse, salesperson)}}</td>
+        <td></td>
+        <td></td>
       </tr>
     </tbody>
   </table>

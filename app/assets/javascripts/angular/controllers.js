@@ -28,6 +28,10 @@ app.config(function($routeProvider, $locationProvider) {
 app.controller("BoardViewCtrl", function($scope, $routeParams, Restangular) {
   bootstrapObject($scope);
 
+  $scope.availableCount = function(grade) {
+    return grade.total - $scope.totalSales(grade);
+  }
+
   $scope.totalSales = function(grade) {
     return _.reduce(grade.sales, function(count, sale) { return count + sale.amount; }, 0);
   }
@@ -53,6 +57,27 @@ app.controller("BoardViewCtrl", function($scope, $routeParams, Restangular) {
       grade[0].sales.push(sale);
     }
   })
+
+
+  // Totals Row
+  $scope.available = function(warehouse) {
+    return _.reduce(warehouse.grades, function(count, grade) { return count + $scope.availableCount(grade); }, 0);
+  }
+
+  $scope.sold = function(warehouse) {
+    return _.reduce(warehouse.grades, function(count, grade) { return count + $scope.totalSales(grade); }, 0);
+  }
+
+  $scope.total = function(warehouse) {
+    return _.reduce(warehouse.grades, function(count, grade) { return count + grade.total; }, 0);
+  }
+
+  $scope.salespersonTotal = function(warehouse, salesperson) {
+    var all_sales = _.flatten(_.pluck(warehouse.grades, 'sales')),
+        sales_for_salesperson = _.where(all_sales, {user_id: salesperson.id});
+
+    return _.reduce(sales_for_salesperson, function(count, sale) { return count + sale.amount; }, 0);
+  }
 })
 
 app.controller("BoardBuilderCtrl", function($scope, $routeParams, Restangular) {

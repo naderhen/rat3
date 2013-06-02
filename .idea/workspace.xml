@@ -21,7 +21,7 @@
     <file path="/index.json.jbuilder" changelist="08fb35c8-0ec4-42dd-aa6d-14461d710771" time="1370136644313" ignored="false" />
     <file path="/edit.html.erb" changelist="08fb35c8-0ec4-42dd-aa6d-14461d710771" time="1370136977053" ignored="false" />
     <file path="/bootstrap.css" changelist="08fb35c8-0ec4-42dd-aa6d-14461d710771" time="1370137129147" ignored="false" />
-    <file path="/controllers.js" changelist="08fb35c8-0ec4-42dd-aa6d-14461d710771" time="1370214634626" ignored="false" />
+    <file path="/controllers.js" changelist="08fb35c8-0ec4-42dd-aa6d-14461d710771" time="1370216085147" ignored="false" />
     <file path="/development.rb" changelist="08fb35c8-0ec4-42dd-aa6d-14461d710771" time="1370141286274" ignored="false" />
     <file path="/builder.html" changelist="08fb35c8-0ec4-42dd-aa6d-14461d710771" time="1370181680789" ignored="false" />
     <file path="/app.js" changelist="08fb35c8-0ec4-42dd-aa6d-14461d710771" time="1370204921912" ignored="false" />
@@ -31,7 +31,7 @@
     <file path="/warehouse.rb" changelist="08fb35c8-0ec4-42dd-aa6d-14461d710771" time="1370199496218" ignored="false" />
     <file path="/grade.rb" changelist="08fb35c8-0ec4-42dd-aa6d-14461d710771" time="1370200121911" ignored="false" />
     <file path="/resources.js" changelist="08fb35c8-0ec4-42dd-aa6d-14461d710771" time="1370180164532" ignored="false" />
-    <file path="/view.html" changelist="08fb35c8-0ec4-42dd-aa6d-14461d710771" time="1370206858426" ignored="false" />
+    <file path="/view.html" changelist="08fb35c8-0ec4-42dd-aa6d-14461d710771" time="1370216153951" ignored="false" />
     <file path="/board_serializer.rb" changelist="08fb35c8-0ec4-42dd-aa6d-14461d710771" time="1370198911041" ignored="false" />
     <file path="/warehouse_serializer.rb" changelist="08fb35c8-0ec4-42dd-aa6d-14461d710771" time="1370197097617" ignored="false" />
     <file path="/user.rb" changelist="08fb35c8-0ec4-42dd-aa6d-14461d710771" time="1370206675281" ignored="false" />
@@ -104,19 +104,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="controllers.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="controllers.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/javascripts/angular/controllers.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="105" column="20" selection-start="3064" selection-end="3064" vertical-scroll-proportion="0.8932384">
+            <state line="79" column="3" selection-start="2555" selection-end="2555" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="user.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/user.rb">
+      <file leaf-file-name="view.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/templates/boards/view.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="2" selection-start="475" selection-end="527" vertical-scroll-proportion="0.0">
+            <state line="32" column="12" selection-start="1406" selection-end="1406" vertical-scroll-proportion="0.8249027">
               <folding />
             </state>
           </provider>
@@ -175,7 +175,6 @@
         <option value="$PROJECT_DIR$/app/serializers/user_serializer.rb" />
         <option value="$PROJECT_DIR$/app/models/user.rb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/templates/boards/sale.html" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/templates/boards/view.html" />
         <option value="$PROJECT_DIR$/app/controllers/home_controller.rb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/models/sale.rb" />
@@ -184,12 +183,13 @@
         <option value="$PROJECT_DIR$/app/views/shared/_header.html.erb" />
         <option value="$PROJECT_DIR$/app/views/boards/show.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/angular/controllers.js" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/templates/boards/view.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="3" />
-    <option name="y" value="399" />
+    <option name="x" value="11" />
+    <option name="y" value="360" />
     <option name="width" value="1440" />
     <option name="height" value="442" />
   </component>
@@ -946,7 +946,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="3" y="399" width="1440" height="442" extended-state="6" />
+    <frame x="11" y="360" width="1440" height="442" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1045,13 +1045,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/templates/boards/view.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="32" selection-start="594" selection-end="594" vertical-scroll-proportion="-11.25">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/home_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="67" selection-start="185" selection-end="185" vertical-scroll-proportion="0.0">
@@ -1138,7 +1131,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/angular/controllers.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="105" column="20" selection-start="3064" selection-end="3064" vertical-scroll-proportion="0.8932384">
+        <state line="79" column="3" selection-start="2555" selection-end="2555" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/templates/boards/view.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="12" selection-start="1406" selection-end="1406" vertical-scroll-proportion="0.8249027">
           <folding />
         </state>
       </provider>
