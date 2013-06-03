@@ -1,5 +1,4 @@
 class SalesController < ApplicationController
-  include ActionController::Live
   before_action :set_sale, only: [:show, :edit, :update, :destroy]
 
   # GET /sales
@@ -25,10 +24,8 @@ class SalesController < ApplicationController
   # POST /sales
   # POST /sales.json
   def create
-    response.headers["Content-Type"] = "text/javascript"
     @sale = Sale.new(sale_params)
 
-    $redis.publish("message", @sale.to_json)
     respond_to do |format|
       if @sale.save
         format.html { redirect_to @sale, notice: 'Sale was successfully created.' }

@@ -19,7 +19,7 @@
     <file path="/routes.js" changelist="43cb7fd6-3193-4b57-82e1-7aafe0e23820" time="1370130682034" ignored="false" />
     <file path="/dashboard.js" changelist="43cb7fd6-3193-4b57-82e1-7aafe0e23820" time="1370130890522" ignored="false" />
     <file path="/boards_controller.rb" changelist="43cb7fd6-3193-4b57-82e1-7aafe0e23820" time="1370217285473" ignored="false" />
-    <file path="/Gemfile" changelist="43cb7fd6-3193-4b57-82e1-7aafe0e23820" time="1370219616291" ignored="false" />
+    <file path="/Gemfile" changelist="43cb7fd6-3193-4b57-82e1-7aafe0e23820" time="1370221130804" ignored="false" />
     <file path="/events_controller.rb" changelist="43cb7fd6-3193-4b57-82e1-7aafe0e23820" time="1370220665757" ignored="false" />
     <file path="/sales_controller.rb" changelist="43cb7fd6-3193-4b57-82e1-7aafe0e23820" time="1370219072374" ignored="false" />
     <file path="/routes.rb" changelist="43cb7fd6-3193-4b57-82e1-7aafe0e23820" time="1370218142231" ignored="false" />
@@ -56,7 +56,7 @@
       <file leaf-file-name="events_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/events_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="14" selection-start="390" selection-end="390" vertical-scroll-proportion="0.0">
+            <state line="0" column="46" selection-start="46" selection-end="46" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -71,10 +71,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="controllers.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="controllers.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/javascripts/angular/controllers.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="7" selection-start="1186" selection-end="1186" vertical-scroll-proportion="0.64171124">
+            <state line="37" column="7" selection-start="1186" selection-end="1186" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -98,10 +98,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sales_controller.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="sales_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/sales_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="0" selection-start="518" selection-end="518" vertical-scroll-proportion="0.0">
+            <state line="30" column="22" selection-start="498" selection-end="498" vertical-scroll-proportion="0.37700534">
               <folding />
             </state>
           </provider>
@@ -119,7 +119,7 @@
       <file leaf-file-name="Gemfile" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="9" selection-start="127" selection-end="131" vertical-scroll-proportion="0.0">
+            <state line="4" column="0" selection-start="120" selection-end="120" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -154,11 +154,11 @@
         <option value="$PROJECT_DIR$/app/controllers/boards_controller.rb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/views/boards/show.html.erb" />
-        <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/config/environments/development.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/events_controller.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/sales_controller.rb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/angular/controllers.js" />
+        <option value="$PROJECT_DIR$/Gemfile" />
+        <option value="$PROJECT_DIR$/app/controllers/sales_controller.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/events_controller.rb" />
       </list>
     </option>
   </component>
@@ -525,13 +525,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="9" selection-start="127" selection-end="131" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/environments/development.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="28" column="33" selection-start="1104" selection-end="1104" vertical-scroll-proportion="0.0">
@@ -539,23 +532,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/angular/controllers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="7" selection-start="1186" selection-end="1186" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="0" selection-start="120" selection-end="120" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/events_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="14" selection-start="390" selection-end="390" vertical-scroll-proportion="0.0">
+        <state line="0" column="46" selection-start="46" selection-end="46" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/sales_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="0" selection-start="518" selection-end="518" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/angular/controllers.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="7" selection-start="1186" selection-end="1186" vertical-scroll-proportion="0.64171124">
+        <state line="30" column="22" selection-start="498" selection-end="498" vertical-scroll-proportion="0.37700534">
           <folding />
         </state>
       </provider>
