@@ -26,6 +26,23 @@ app.config(function($routeProvider, $locationProvider) {
 });
 
 app.controller("BoardViewCtrl", function($scope, $routeParams, Restangular) {
+  // handles the callback from the received event
+  var handleCallback = function (msg) {
+    $scope.$apply(function () {
+      var sale = $.parseJSON(msg.data),
+          grades = _.flatten(_.pluck($scope.board.warehouses, 'grades')),
+          grade = _.where(grades, {id: sale.grade_id});
+
+      if (grade.length) {
+        grade[0].sales.push(sale);
+      }
+    });
+  }
+
+  var source = new EventSource('/events');
+  source.addEventListener('message', handleCallback, false);
+
+
   bootstrapObject($scope);
 
   $scope.availableCount = function(grade) {
@@ -49,13 +66,7 @@ app.controller("BoardViewCtrl", function($scope, $routeParams, Restangular) {
   }
 
   $scope.$on('new_sale', function(scope, data) {
-    var sale = data.sale,
-        grades = _.flatten(_.pluck($scope.board.warehouses, 'grades')),
-        grade = _.where(grades, {id: sale.grade_id});
 
-    if (grade.length) {
-      grade[0].sales.push(sale);
-    }
   })
 
 
@@ -127,7 +138,6 @@ app.controller("SaleCtrl", function($scope, $rootScope, Restangular) {
 
     sales = Restangular.all('sales');
     sales.post({sale: sale}).then(function(result) {
-      newSale($rootScope, result);
       $scope.hide();
     });
   }
