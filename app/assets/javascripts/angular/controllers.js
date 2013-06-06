@@ -165,4 +165,11 @@ app.controller("SalesCtrl", function($scope, $rootScope, $routeParams, Restangul
   $scope.back = function() {
     $location.path("/organizations/" + $routeParams.org_id + "/boards/" + $routeParams.board_id);
   }
+
+  $scope.removeSale = function(sale) {
+    var saleResource = Restangular.one('sales', sale.id);
+    saleResource.remove().then(function(result) {
+      $scope.sales.splice(_.indexOf($scope.sales, sale), 1);
+    });
+  }
 })

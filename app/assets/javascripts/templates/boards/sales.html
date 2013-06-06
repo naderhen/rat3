@@ -9,17 +9,19 @@
       <th>Price</th>
       <th>Invoice Date</th>
       <th>Receive Date</th>
+      <th>Actions</th>
     </tr>
   </thead>
   <tbody>
     <tr ng-repeat="sale in sales">
-      <td>{{sale.id}} {{sale.amount}}</td>
+      <td>{{sale.amount}}</td>
       <td>{{sale.grade_name}}</td>
       <td>{{sale.user_name}}</td>
       <td>{{sale.customer_name}}</td>
       <td>{{sale.price}}</td>
       <td>{{sale.invoice_date}}</td>
       <td>{{sale.receive_date}}</td>
+      <td><a class="btn btn-mini" ng-click="removeSale(sale)"><i class="icon-trash"></i>Delete</a></td>
     </tr>
   </tbody>
 </table>

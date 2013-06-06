@@ -70,7 +70,9 @@ class SalesController < ApplicationController
   private
 
   def set_board
-    @board = Board.find(params[:board_id])
+    if params[:board_id]
+      @board = Board.find(params[:board_id])
+    end
   end
 
   # Use callbacks to share common setup or constraints between actions.
