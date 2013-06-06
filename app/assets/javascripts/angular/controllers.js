@@ -154,11 +154,15 @@ app.controller("SalesCtrl", function($scope, $rootScope, $routeParams, Restangul
   var el = $("#initial_object")
       board = Restangular.one('organizations', $routeParams.org_id).one('boards', $routeParams.board_id);
 
+  $scope.setAndGroupSales = function(sales) {
+    $scope.warehouses = _.groupBy(sales, 'warehouse_name');
+  }
+
   if (el.data('sales')) {
-    $scope.sales = el.data('sales');
+    $scope.setAndGroupSales(el.data('sales'));
   } else {
     board.getList('sales').then(function(result) {
-      $scope.sales = result;
+      $scope.setAndGroupSales(result);
     });
   }
 
@@ -169,7 +173,9 @@ app.controller("SalesCtrl", function($scope, $rootScope, $routeParams, Restangul
   $scope.removeSale = function(sale) {
     var saleResource = Restangular.one('sales', sale.id);
     saleResource.remove().then(function(result) {
-      $scope.sales.splice(_.indexOf($scope.sales, sale), 1);
+      $.each($scope.warehouses, function(i, warehouse) {
+        warehouse.splice(_.indexOf(warehouse, sale));
+      });
     });
   }
 })
