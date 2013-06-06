@@ -1,10 +1,16 @@
 class SalesController < ApplicationController
+
+  before_action :set_board
   before_action :set_sale, only: [:show, :edit, :update, :destroy]
 
   # GET /sales
   # GET /sales.json
   def index
-    @sales = Sale.all
+    @sales = @board.sales
+    respond_to do |format|
+      format.html { }
+      format.json { render :json => @sales }
+    end
   end
 
   # GET /sales/1
@@ -62,6 +68,11 @@ class SalesController < ApplicationController
   end
 
   private
+
+  def set_board
+    @board = Board.find(params[:board_id])
+  end
+
   # Use callbacks to share common setup or constraints between actions.
   def set_sale
     @sale = Sale.find(params[:id])

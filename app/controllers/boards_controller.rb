@@ -1,5 +1,4 @@
 class BoardsController < ApplicationController
-  include ActionController::Live
   load_and_authorize_resource
 
   before_action :set_organization
@@ -14,6 +13,10 @@ class BoardsController < ApplicationController
   # GET /boards/1
   # GET /boards/1.json
   def show
+    respond_to do |format|
+      format.html { }
+      format.json { render :json => @board }
+    end
   end
 
   # GET /boards/new

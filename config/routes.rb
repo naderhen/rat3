@@ -1,6 +1,8 @@
 Rat3::Application.routes.draw do
   resources :organizations do
-    resources :boards
+    resources :boards do
+      resources :sales
+    end
   end
 
   resources :customers do

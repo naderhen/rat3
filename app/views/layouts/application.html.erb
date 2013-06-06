@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html ng-app="app">
 <head>
+  <base href="/">
   <title>Rat3</title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => false %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => false %>
@@ -19,6 +20,7 @@
       <p class="alert"><%= alert %></p>
     <% end %>
     <%= yield %>
+
   </div>
 </body>
 </html>

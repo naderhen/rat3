@@ -1,9 +1,16 @@
-function bootstrapObject($scope) {
+function bootstrapObject($scope, $routeParams, Restangular) {
   var el = $("#initial_object");
 
   if (el && el.data('board') && el.data('current_user')) {
     $scope.board = el.data('board');
     $scope.current_user = el.data('current_user');
+  } else {
+    var board = Restangular.one('organizations', $routeParams.org_id).one('boards', $routeParams.board_id);
+
+    board.get().then(function(result) {
+      $scope.board = result;
+      $scope.current_user = el.data('current_user');
+    })
   }
 }
 
@@ -17,15 +24,19 @@ app.config(function($routeProvider, $locationProvider) {
         templateUrl: "/assets/templates/boards/builder.html",
         controller: "BoardBuilderCtrl"
       })
-      .when('/organizations/:org_id/boards/:id', {
+      .when('/organizations/:org_id/boards/:board_id', {
         templateUrl: "/assets/templates/boards/view.html",
         controller: "BoardViewCtrl"
+      })
+      .when('/organizations/:org_id/boards/:board_id/sales', {
+        templateUrl: "/assets/templates/boards/sales.html",
+        controller: "SalesCtrl"
       })
 
   $locationProvider.html5Mode(true);
 });
 
-app.controller("BoardViewCtrl", function($scope, $routeParams, Restangular) {
+app.controller("BoardViewCtrl", function($scope, $routeParams, Restangular, $location) {
   // handles the callback from the received event
   var handleCallback = function (msg) {
     $scope.$apply(function () {
@@ -39,11 +50,7 @@ app.controller("BoardViewCtrl", function($scope, $routeParams, Restangular) {
     });
   }
 
-  var source = new EventSource('/events');
-  source.addEventListener('message', handleCallback, false);
-
-
-  bootstrapObject($scope);
+  bootstrapObject($scope, $routeParams, Restangular);
 
   $scope.availableCount = function(grade) {
     return grade.total - $scope.totalSales(grade);
@@ -65,9 +72,9 @@ app.controller("BoardViewCtrl", function($scope, $routeParams, Restangular) {
     return _.reduce(sales, function(count, sale) { return count + sale.price; }, 0) / sales.length;
   }
 
-  $scope.$on('new_sale', function(scope, data) {
-
-  })
+  $scope.showSummary = function() {
+    $location.path($location.path() + "/sales");
+  }
 
 
   // Totals Row
@@ -136,9 +143,26 @@ app.controller("SaleCtrl", function($scope, $rootScope, Restangular) {
     sale.amount = parseInt(sale.amount);
     sale.price = parseFloat(sale.price);
 
-    sales = Restangular.all('sales');
+    var sales = Restangular.all('sales');
     sales.post({sale: sale}).then(function(result) {
       $scope.hide();
     });
+  }
+})
+
+app.controller("SalesCtrl", function($scope, $rootScope, $routeParams, Restangular, $location) {
+  var el = $("#initial_object")
+      board = Restangular.one('organizations', $routeParams.org_id).one('boards', $routeParams.board_id);
+
+  if (el.data('sales')) {
+    $scope.sales = el.data('sales');
+  } else {
+    board.getList('sales').then(function(result) {
+      $scope.sales = result;
+    });
+  }
+
+  $scope.back = function() {
+    $location.path("/organizations/" + $routeParams.org_id + "/boards/" + $routeParams.board_id);
   }
 })
